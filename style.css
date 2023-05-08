@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* * {
+  outline: 2px solid red;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,400&display=swap");
+.attribution {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-saturated-accent);
+}
+
+:root {
+  --clr-desaturated-accent: hsl(0, 36%, 70%);
+  --clr-saturated-accent: hsl(0, 93%, 68%);
+  --clr-dark: hsl(0, 6%, 24%);
+  --gradient-light: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --gradient-dark: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--gradient-light);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+}
+
+header {
+  height: 6rem;
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  background: var(--gradient-dark);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.circle {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  aspect-ratio: 14/9;
+  background: url(images/hero-mobile.jpg) no-repeat center center/ cover;
+}
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--clr-dark);
+  cursor: pointer;
+}
+.text-container {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.title {
+  text-transform: uppercase;
+  color: var(--clr-dark);
+  width: min-content;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5em;
+}
+.accent {
+  color: var(--clr-desaturated-accent);
+  font-weight: 400;
+}
+.description {
+  color: var(--clr-desaturated-accent);
+  font-weight: 600;
+  width: clamp(fit-content, 350px, 400px);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.form {
+  justify-self: flex-start;
+  height: 3rem;
+  width: 90%;
+  display: flex;
+  position: relative;
+  border: 0;
+}
+#email {
+  flex-grow: 1;
+  border: 1px solid;
+  border-color: var(--clr-desaturated-accent);
+  border-radius: 1.5rem 0 0 1.5rem;
+  padding-left: 1.5em;
+  font-size: 1rem;
+  color: var(--clr-dark);
+}
+#email::placeholder {
+  color: var(--clr-desaturated-accent);
+}
+#submitBtn {
+  position: absolute;
+  right: -2em;
+
+  height: 3rem;
+  width: 5rem;
+  border-radius: 2rem;
+  border: 0;
+  background: var(--gradient-dark);
+  cursor: pointer;
+  box-shadow: 0 10px 30px 1px var(--clr-desaturated-accent);
+}
+#submitBtn:focus,
+#submitBtn:hover {
+  background: hsl(0, 80%, 86%);
+}
+#email:focus {
+  outline-color: var(--clr-saturated-accent);
+}
+.errorMessage {
+  display: none;
+
+  position: absolute;
+  left: 1.5em;
+  bottom: -1.5em;
+  color: var(--clr-saturated-accent);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.errorCricle {
+  /* display to flex later */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 4rem;
+}
+footer {
+  align-items: flex-end;
+}
+
+@media (min-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: minmax(5rem, 10%) minmax(10rem, 40%) minmax(
+        5rem,
+        10%
+      ) minmax(15rem, 50%);
+    grid-template-rows: minmax(5rem, 25%) minmax(10rem, 50%) minmax(5rem, 25%);
+    grid-auto-flow: dense;
+  }
+  header {
+    grid-column: 2 / 3;
+    padding: 3rem 0 0;
+  }
+  .hero {
+    background: url(images/hero-desktop.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    grid-column: 4 / -1;
+    grid-row: 1 / -1;
+  }
+  main {
+    grid-column: 2 / 3;
+  }
+  .text-container {
+    text-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 0.5rem;
+  }
+  .title {
+    font-size: 3.5rem;
+    justify-self: flex-start;
+    margin-left: 0;
+    letter-spacing: 1rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .title .accent {
+    font-weight: 100;
+  }
+  .description {
+    text-align: start;
+  }
+  footer {
+    grid-column: 2 / 3;
+    display: flex;
+  }
+}
