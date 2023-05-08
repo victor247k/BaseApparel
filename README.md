@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/victor247k/BaseApparel]
+- Live Site URL: [https://victor247k.github.io/BaseApparel/]
 
 ## My process
 
@@ -46,59 +46,57 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to proprely use a Mobile-first workflow, I practiced some things i learned in a tutorila, got better at styling, how to use the layout tool in chrome, it helped me align things and also practiced making responsive design. Also prcaticed grid, I didn't use it this way before, it's really useful. And i practiced styling the input lement more.
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<input id="email" type="text" placeholder="Email Address" />
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    display: grid;
+    grid-template-columns: minmax(5rem, 10%) minmax(10rem, 40%) minmax(
+        5rem,
+        10%
+      ) minmax(15rem, 50%);
+    grid-template-rows: minmax(5rem, 25%) minmax(10rem, 50%) minmax(5rem, 25%);
+    grid-auto-flow: dense;
+}
+  #email {
+  flex-grow: 1;
+  border: 1px solid;
+  border-color: var(--clr-desaturated-accent);
+  border-radius: 1.5rem 0 0 1.5rem;
+  padding-left: 1.5em;
+  font-size: 1rem;
+  color: var(--clr-dark);
+}
+#email::placeholder {
+  color: var(--clr-desaturated-accent);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will definetly need more practice with responsive design, layouts in general, and with display grid, I don't know if I did the image corectly so I have to get better at doing that.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://youtu.be/QBfblbmTTF4) - This helped me with the layout. I really like how this person explains stuff and I will definetly watch him again in the near future.
+- [Example resource 2](https://css-tricks.com/gradient-borders-in-css/) - Do you know how to do a gradient background? I didn't until I came across this amazing tutorial.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+-[Example resource 3](https://www.cssmatic.com/box-shadow) - Most useful site for understanding the box-shadow atribute(or what it is) it is very useful.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Discord - Victor247#1836
+- Frontend Mentor - [@victor247k](https://www.frontendmentor.io/profile/victor247k)
+- Instagram - [@victorspinei247](https://www.instagram.com/victorspinei247/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I am thankful for this amazing challenge from FrontEnd Mentor,I really liked it, it allowed me to practiced the things i learned from a tutorial and to get better at making a responsive website, I will use this knowledge to build my own website one day, maybe this summer. Also I am grateful for Kevin Powell for hsi amazing tutorials, that is where I got the motivation to sit and finsih this from start to finish, it took in total like 6 hours with pauses in between to do his tutorial and this challenge. And I am grateful for all the suport I get and all of the sources that helped me.
