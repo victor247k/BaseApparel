@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header role="heading">
+    <header>
       <div class="logo"><div class="circle"></div></div>
       <p class="name">
         Base <br />
@@ -29,14 +29,14 @@
       </p>
     </header>
     <div class="hero"></div>
-    <main class="flex" role="main">
+    <main class="flex">
       <div class="text-container">
-        <h1 class="title">
+        <h1 class="title" role="heading">
           <span class="accent">WE're</span>
           coming soon
         </h1>
 
-        <p class="description" role="text">
+        <p class="description">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
@@ -46,33 +46,18 @@
           <label for="email"></label>
           <input id="email" type="text" placeholder="Email Address" />
           <button id="submitBtn" type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-              <path
-                fill="none"
-                stroke="#FFF"
-                stroke-width="2"
-                d="M1 1l8.836 8.836L1 18.671"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/>
             </svg>
           </button>
           <p class="errorMessage">Please provide a valid email</p>
           <div class="errorCricle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <g fill="none" fill-rule="evenodd">
-                <circle cx="12" cy="12" r="12" fill="#F96464" />
-                <path
-                  fill="#FFF"
-                  fill-rule="nonzero"
-                  d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"
-                />
-              </g>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"> <g fill="none" fill-rule="evenodd"> <circle cx="12" cy="12" r="12" fill="#F96464" /> <path fill="#FFF" fill-rule="nonzero" d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"/></g></svg>
           </div>
         </div>
       </div>
     </main>
 
-    <footer role="footer">
+    <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
